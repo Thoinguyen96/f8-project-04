@@ -90,6 +90,7 @@
         <link rel="stylesheet" href="./asset.css/reset.css" />
         <link rel="stylesheet" href="./asset.css/main.css" />
     </head>
+
     <body>
         <main class="main">
             <div class="grid">
@@ -366,9 +367,9 @@
                                             alt=""
                                             class="vacation__item-img"
                                         />
-                                        <span class="vacation__item-desc"
-                                            >Pet Boarding</span
-                                        >
+                                        <div class="vacation__item-desc">
+                                            Pet Boarding
+                                        </div>
                                     </div>
                                     <div class="vacation__item">
                                         <img
@@ -660,13 +661,16 @@
                             <input
                                 hidden
                                 class="choice__wrap-input"
-                                checked
                                 id="checked"
                                 type="checkbox"
                             />
                             <label class="choice__wrap-label" for="checked">
-                                <span class="choice__node-month">Monthly</span>
-                                <span class="choice__node-year"> Yearly </span>
+                                <span class="choice__node-month choice__btn"
+                                    >Monthly</span
+                                >
+                                <span class="choice__node-year choice__btn">
+                                    Yearly
+                                </span>
                                 <span class="choice__node-on"></span>
                             </label>
 
@@ -677,7 +681,7 @@
                             />
                         </div>
                     </div>
-                    <div class="choice__list">
+                    <div class="choice__list active">
                         <!-- item 1  -->
                         <div class="choice__list-item">
                             <span class="choice__list-item-label">Basic</span>
@@ -877,96 +881,383 @@
                             </div>
                         </div>
                     </div>
+                    <div class="choice__list">
+                        <!-- item 1  -->
+                        <div class="choice__list-item">
+                            <span class="choice__list-item-label">Basic</span>
+                            <h3 class="choice__list-item-care">Day care</h3>
+                            <span class="choice__list-item-price">$900</span>
+                            <button class="choice__list-item-node">
+                                Purchase Now
+                            </button>
+                            <div class="choice__list-select">
+                                <div class="choice__list-select-care">
+                                    Single room
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Socialist E
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />xercise
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Custom Meal
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />s
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Spa and Gro
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />oming
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Excercise 2
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />x
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Custom Meal
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />s
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2  -->
+                        <div class="choice__list-item">
+                            <span class="choice__list-item-label"
+                                >Exclusive</span
+                            >
+                            <h3 class="choice__list-item-care">2X Care</h3>
+                            <span class="choice__list-item-price">$1100</span>
+                            <button
+                                class="choice__list-item-node choice__list-item-node--active"
+                            >
+                                Purchase Now
+                            </button>
+                            <div class="choice__list-select">
+                                <div class="choice__list-select-care">
+                                    Single room
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Socialist E
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />xercise
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Custom Meal
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />s
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Spa and Gro
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />oming
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Excercise 2
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />x
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Custom Meal
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />s
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3  -->
+                        <div class="choice__list-item">
+                            <span class="choice__list-item-label"
+                                >Platinum</span
+                            >
+                            <h3 class="choice__list-item-care">4X Care</h3>
+                            <span class="choice__list-item-price">$1200</span>
+                            <button class="choice__list-item-node">
+                                Purchase Now
+                            </button>
+                            <div class="choice__list-select">
+                                <div class="choice__list-select-care">
+                                    Single room
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Socialist E
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />xercise
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Custom Meal
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />s
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Spa and Gro
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />oming
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Excercise 2
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />x
+                                </div>
+
+                                <div class="choice__list-select-care">
+                                    Custom Meal
+                                    <img
+                                        src="./asset.css/img/Vector.choice.svg"
+                                        alt=""
+                                        class="choice__list-img"
+                                    />s
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Our Reviews -->
             <div class="review">
                 <div class="grid">
                     <div class="review__wrap">
-                        <div class="review__vector-switch-first">
-                            <svg
-                                width="20"
-                                height="21"
-                                viewBox="0 0 20 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M16.875 10.9985H3.125"
-                                    stroke="currentcolor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M8.75 5.37354L3.125 10.9985L8.75 16.6235"
-                                    stroke="currentcolor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </div>
-
-                        <div class="review__wrap-center">
-                            <div class="review__wrap-img">
-                                <img
-                                    src="./asset.css/img/Our Reviews-img.png"
-                                    alt="Reviews"
-                                    class="review__img"
-                                />
+                        <div class="review__wrap-node">
+                            <div class="review__vector-switch-back">
+                                <svg
+                                    width="20"
+                                    height="21"
+                                    viewBox="0 0 20 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16.875 10.9985H3.125"
+                                        stroke="currentcolor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M8.75 5.37354L3.125 10.9985L8.75 16.6235"
+                                        stroke="currentcolor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
                             </div>
-                            <div class="review__content">
-                                <h2 class="review__content-heading">
-                                    Our Reviews
-                                </h2>
-                                <p class="review__content-desc">
-                                    “It was very comforting to recieve a text
-                                    and pics each day about our pets and how
-                                    they were doing. It was also nice that my
-                                    pets were in the comfortable environment of
-                                    their own home and received playfull
-                                    attention from our pet sitters as well.
-                                    Thanks so much!”
-                                </p>
-                                <span class="review__content-author"
-                                    >Karla Deras
-                                </span>
+                            <div class="review__vector-switch-next">
+                                <svg
+                                    width="20"
+                                    height="21"
+                                    viewBox="0 0 20 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16.875 10.9985H3.125"
+                                        stroke="currentcolor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M8.75 5.37354L3.125 10.9985L8.75 16.6235"
+                                        stroke="currentcolor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
                             </div>
                         </div>
-
-                        <div class="review__vector-switch-last">
-                            <svg
-                                width="20"
-                                height="21"
-                                viewBox="0 0 20 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M16.875 10.9985H3.125"
-                                    stroke="currentcolor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M8.75 5.37354L3.125 10.9985L8.75 16.6235"
-                                    stroke="currentcolor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
+                        <div class="review__wrap-small">
+                            <!-- ------------review 1 -->
+                            <div class="review__wrap-center">
+                                <div class="review__wrap-img">
+                                    <img
+                                        src="./asset.css/img/Our Reviews-img.png"
+                                        alt="Reviews"
+                                        class="review__img"
+                                    />
+                                </div>
+                                <div class="review__content">
+                                    <h2 class="review__content-heading">
+                                        Our Reviews
+                                    </h2>
+                                    <p class="review__content-desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="review__content-author"
+                                        >Karla Deras
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- ------------review 2 -->
+                            <div class="review__wrap-center">
+                                <div class="review__wrap-img">
+                                    <img
+                                        src="./asset.css/img/review2.png"
+                                        alt="Reviews"
+                                        class="review__img"
+                                    />
+                                </div>
+                                <div class="review__content">
+                                    <h2 class="review__content-heading">
+                                        Our Reviews 2
+                                    </h2>
+                                    <p class="review__content-desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="review__content-author"
+                                        >Karla Deras
+                                    </span>
+                                </div>
+                            </div>
+                            <!--------------review 3 -->
+                            <div class="review__wrap-center">
+                                <div class="review__wrap-img">
+                                    <img
+                                        src="./asset.css/img/review3.png"
+                                        alt="Reviews"
+                                        class="review__img"
+                                    />
+                                </div>
+                                <div class="review__content">
+                                    <h2 class="review__content-heading">
+                                        Our Reviews 3
+                                    </h2>
+                                    <p class="review__content-desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="review__content-author"
+                                        >Karla Deras
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- -------------review 4 -->
+                            <div class="review__wrap-center">
+                                <div class="review__wrap-img">
+                                    <img
+                                        src="./asset.css/img/review3.png"
+                                        alt="Reviews"
+                                        class="review__img"
+                                    />
+                                </div>
+                                <div class="review__content">
+                                    <h2 class="review__content-heading">
+                                        Our Reviews 4
+                                    </h2>
+                                    <p class="review__content-desc">
+                                        “It was very comforting to recieve a
+                                        text and pics each day about our pets
+                                        and how they were doing. It was also
+                                        nice that my pets were in the
+                                        comfortable environment of their own
+                                        home and received playfull attention
+                                        from our pet sitters as well. Thanks so
+                                        much!”
+                                    </p>
+                                    <span class="review__content-author"
+                                        >Karla Deras
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review__switch-wrap">
-                        <span
-                            class="review__switch review__switch--active"
-                        ></span>
-                        <span class="review__switch"></span>
-                        <span class="review__switch"></span>
-                        <span class="review__switch"></span>
+                        <div class="review__switch-wrap">
+                            <span class="review__switch review__switch--active">
+                            </span>
+                            <span class="review__switch"></span>
+                            <span class="review__switch"></span>
+                            <span class="review__switch"></span>
+                        </div>
                     </div>
                 </div>
             </div>
