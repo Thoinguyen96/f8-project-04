@@ -28,32 +28,47 @@ const lists = $$(".choice__list");
 buttons.forEach((element, index) => {
     element.onclick = function () {
         const listActive = $(".choice__list.active");
-        review;
         listActive.classList.remove("active");
-
         lists[index].classList.add("active");
     };
 });
 //----------------- Reviews-----------------------------------------------
+const center = $$(".review__wrap-center");
 const wrap = $(".review__wrap-small");
 const back = $(".review__vector-switch-back");
 const next = $(".review__vector-switch-next");
-const review = $$(".review__wrap-center");
-index = 0;
-back.addEventListener("click", function () {
-    index = index - 1;
+let index = 0;
+back.onclick = function () {
+    index--;
     if (index < 0) {
-        index = review.length - 1;
+        index = center.length - 1;
     }
     wrap.style.right = index * 100 + "%";
-});
-next.addEventListener("click", function () {
-    index = index + 1;
-    if (index > review.length - 1) {
+};
+
+next.onclick = function () {
+    index++;
+    if (index > center.length - 1) {
         index = 0;
     }
     wrap.style.right = index * 100 + "%";
-});
+};
+// back.onclick = function () {
+//     index = index - 1;
+//     if (index < 0) {
+//         index = review.length - 1;
+//     }
+//     wrap.style.right = index * 100 + "%";
+// };
+
+// next.onclick = function () {
+//     index = index + 1;
+//     if (index > review.length - 1) {
+//         index = 0;
+//     }
+//     wrap.style.right = index * 100 + "%";
+// };
+
 // const review = $$(".review__wrap-center");
 // const menu = $$(".review__switch");
 

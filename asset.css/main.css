@@ -934,9 +934,11 @@ button {
     width: 100%;
     display: flex;
     position: relative;
-    height: 500px;
+    height: 600px;
+    overflow: hidden;
 }
 .review__wrap-center {
+    flex: 1 0 100%;
     display: flex;
     justify-content: center;
     width: 100%;
