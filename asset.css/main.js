@@ -24,7 +24,6 @@ item.forEach((tab, index) => {
 // -----Choice -------------------------------------------------------------
 const buttons = $$(".choice__btn");
 const lists = $$(".choice__list");
-
 buttons.forEach((element, index) => {
     element.onclick = function () {
         const listActive = $(".choice__list.active");
@@ -37,6 +36,9 @@ const center = $$(".review__wrap-center");
 const wrap = $(".review__wrap-small");
 const back = $(".review__vector-switch-back");
 const next = $(".review__vector-switch-next");
+const nodeSwitch = $$(".review__switch");
+const switchActive = $(".review__switch.review__switch--active");
+
 let index = 0;
 back.onclick = function () {
     index--;
@@ -44,6 +46,12 @@ back.onclick = function () {
         index = center.length - 1;
     }
     wrap.style.right = index * 100 + "%";
+    const switchBack = nodeSwitch[index];
+    $(".review__switch.review__switch--active").classList.remove(
+        "review__switch--active"
+    );
+
+    switchBack.classList.add("review__switch--active");
 };
 
 next.onclick = function () {
@@ -52,7 +60,25 @@ next.onclick = function () {
         index = 0;
     }
     wrap.style.right = index * 100 + "%";
+    const switchBack = nodeSwitch[index];
+
+    $(".review__switch.review__switch--active").classList.remove(
+        "review__switch--active"
+    );
+    switchBack.classList.add("review__switch--active");
 };
+
+nodeSwitch.forEach(function (e, index) {
+    e.onclick = function () {
+        const switchBack = nodeSwitch[index];
+        $(".review__switch.review__switch--active").classList.remove(
+            "review__switch--active"
+        );
+        switchBack.classList.add("review__switch--active");
+        wrap.style.right = index * 100 + "%";
+    };
+});
+
 // back.onclick = function () {
 //     index = index - 1;
 //     if (index < 0) {

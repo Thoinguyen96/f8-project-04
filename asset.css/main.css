@@ -25,6 +25,9 @@ a {
 button {
     cursor: pointer;
 }
+.btn:hover {
+    opacity: 1;
+}
 .btn {
     display: block;
     line-height: 50px;
@@ -808,6 +811,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .review__wrap-img {
@@ -896,6 +900,7 @@ button {
     height: 8px;
     border: 1px solid #ff5b2e;
     border-radius: 4px;
+    transition: all 0.4s ease-in;
 }
 
 .review__vector-switch-next:hover,
@@ -935,7 +940,6 @@ button {
     display: flex;
     position: relative;
     height: 600px;
-    overflow: hidden;
 }
 .review__wrap-center {
     flex: 1 0 100%;
